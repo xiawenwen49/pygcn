@@ -5,7 +5,7 @@ import torch
 from torch.nn.parameter import Parameter
 from torch.nn.modules.module import Module
 
-
+# x
 class GraphConvolution(Module):
     """
     Simple GCN layer, similar to https://arxiv.org/abs/1609.02907
