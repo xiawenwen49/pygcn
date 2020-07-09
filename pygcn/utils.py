@@ -32,7 +32,7 @@ def load_data(path="../data/cora/", dataset="cora"):
                         shape=(labels.shape[0], labels.shape[0]),
                         dtype=np.float32)
 
-    # build symmetric adjacency matrix
+    # build symmetric adjacency matrix. Here adj is a symmetrix metrix !!!
     adj = adj + adj.T.multiply(adj.T > adj) - adj.multiply(adj.T > adj)
 
     features = normalize(features)
